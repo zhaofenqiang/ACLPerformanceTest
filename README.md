@@ -3,7 +3,7 @@ v17.12 performance report is [here](https://github.com/zhaofenqiang/Test_Compute
 This report is tested on [RK3399](http://wiki.t-firefly.com/index.php/Firefly-RK3399) platform and the Arm Compute Library is version [**18.01**](https://github.com/ARM-software/ComputeLibrary/tree/v18.01).
 
 ## Models
-Performance data were collected on AlexNet, GoogLeNet, SqueezeNet_v1.0, MobileNet_v1_1_224, VGG16, VGG19, Inception-v3 and Inception-v4.
+Performance data were collected on [AlexNet](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_alexnet.cpp), [GoogLeNet](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_googlenet.cpp), [SqueezeNet_v1.0](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_squeezenet.cpp), [MobileNet_v1_1_224](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_mobilenet.cpp), [VGG16](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_vgg16.cpp), [VGG19](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_vgg19.cpp), [Inception-v3](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_inception_v3.cpp) and [Inception-v4](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/examples/graph_inception_v4.cpp).
 And the pre-trained weights were provided by [caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo), and [tensorflow slim model](https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models).
 
 ## Methods    
