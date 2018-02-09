@@ -48,9 +48,9 @@ And when testing Inception-v4 on CPU using GEMM libeary, the program would regul
 
 |   |AlexNet|	SqueezeNet	|GoogLeNet|	MobileNet|	vgg16	|vgg19	|Inception-v3|	Inception-v4
 | - | :-: | :-: | :-: | :-: | :-: | :-: |  :-: |  :-: | 
-|Graph-NE	|389.2|	189.7	|358.2	|615.8	|3059.8|	3702.2	|1022	|Memory N/A
-|Graph-CL	|251.2	|305.3	|554.6	|367.4	|3909.4	|5083.2|	1421|	3276.6
+|Graph-NE	|389.2|	189.7	|**358.2**	|615.8	|**3059.8**|	**3702.2**	|**1022**	|Memory N/A
+|Graph-CL	|**251.2**	|305.3	|554.6	|367.4	|3909.4	|5083.2|	1421|	3276.6
 |Caffe-NEON	|696.6	|229.5	|696.6	|485.6				
-|Caffe-OpenBLAS	|1256.6	|132.9	|1256.6	|281.5				
-|Caffe-Mixed Model	|430.3	|120.9	|430.3	|264.9				
+|Caffe-OpenBLAS	|1256.6	|**132.9**	|1256.6	|281.5				
+|Caffe-Mixed Model	|430.3	|**120.9**	|430.3	|264.9				
 |Caffe-Opencl	|1236	|535.5	|1236	|764.8			
