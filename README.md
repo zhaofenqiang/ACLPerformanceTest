@@ -18,7 +18,7 @@ The examples is located at [examples/graph_*.cpp](https://github.com/zhaofenqian
 
     And AlexNet, GoogLeNet, SqueezeNet and MobileNet’s convolution layer were executed by GEMM on NEON and DIRECT on OPENCL by [default](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/fc99318d5062fe93455bedfec7e01e308aa02aff/ComputeLibrary_v1801/examples/graph_alexnet.cpp#L57):  
 ` TargetHint            target_hint      = set_target_hint(argc > 1 ? std::strtol(argv[1], nullptr, 10) : 0);   
-        ConvolutionMethodHint convolution_hint = target_hint == TargetHint::NEON ? ConvolutionMethodHint::GEMM : ConvolutionMethodHint::DIRECT;`
+  ConvolutionMethodHint convolution_hint = target_hint == TargetHint::NEON ? ConvolutionMethodHint::GEMM : ConvolutionMethodHint::DIRECT;`
 
 +  [CaffeOnACL](https://github.com/OAID/caffeOnACL)    
 The CaffeOnACL performances are directly copy from [CaffeOnACL performance report](https://github.com/OAID/CaffeOnACL/blob/master/acl_openailab/performance_report.pdf)
