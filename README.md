@@ -6,7 +6,7 @@ This report is tested on [RK3399](http://wiki.t-firefly.com/index.php/Firefly-RK
 Unlike v17.12 performance test, only Graph API was used to represent the ComputeLibrary performance on v18.01.  
 + ACL Graph API   
 The examples is located at [examples/graph_*.cpp](https://github.com/zhaofenqiang/ACLPerformanceTest/tree/master/ComputeLibrary_v1801/examples).  The result is an average time of more than 50 times inferences, but the standard deviation is still considerably very large, about 40%. The performacnce data were collected at a optimal develop board's working state. Here are the images used in the [log](), their correct label is dog, cat, bee respectively.     
-![dog](https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/dog.jpg)  ![cat](https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/cat_227.jpg)  ![https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/bee.jpg](https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/bee.jpg)     
+![dog](https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/dog.jpg)  ![cat](https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/cat_227.jpg)  ![pig](https://raw.githubusercontent.com/zhaofenqiang/ACLPerformanceTest/master/ComputeLibrary_v1801/data/images/pig.jpg)
 
 +  [CaffeOnACL](https://github.com/OAID/caffeOnACL)    
 The CaffeOnACL performances are directly copy from [CaffeOnACL performance report](https://github.com/OAID/CaffeOnACL/blob/master/acl_openailab/performance_report.pdf)
