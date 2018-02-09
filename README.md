@@ -29,12 +29,14 @@ The CaffeOnACL performances are directly copy from [CaffeOnACL performance repor
 
 ##  Testing process    
 1. Converted pre-trained weights by the scripts [here](https://github.com/zhaofenqiang/ACLPerformanceTest/tree/master/ComputeLibrary_v1801/scripts), although the code is a little ugly and probably can not work correctly. It's just for reference because the [raw scripts](https://github.com/ARM-software/ComputeLibrary/tree/master/scripts) has some problems as mentioned in [#324](https://github.com/ARM-software/ComputeLibrary/issues/324) and caffe_data_extractor.py could failed when a bolb has 3 weights. 
-2. Build the ACL by `scons Werror=1 -j4 debug=0 asserts=1 neon=1 opencl=1 embed_kernels=1 os=linux arch=arm64-v8a benchmark_tests=1`   
-3. Execute the program by `LD_LIBRARY_PATH=build ./build/examples/graph_*`
+2. Build the ACL by  
+`scons Werror=1 -j4 debug=0 asserts=1 neon=1 opencl=1 embed_kernels=1 os=linux arch=arm64-v8a benchmark_tests=1`   
+3. Execute the program by   
+`LD_LIBRARY_PATH=build ./build/examples/graph_*`
 4. Collect the performace data printed on the screen.
 
 # Performance  
-For now, the Inception-v3, Inception-v4 and MobileNet_v1_1_224's pre-trained weights were still can not be extracted and imported and working correctly, the inference time were instead collected by random filled weights or incorrect inference. However with this bug [#311](https://github.com/ARM-software/ComputeLibrary/issues/311) fixed in Arm ComputeLibrary v18.01, the inference time can be obtained by random filled weights to a certain degree of confidence, although it is still a little smaller than the real inference time.   
+For now, the Inception-v3, Inception-v4 and MobileNet_v1_1_224's pre-trained weights can be extracted and imported successfully by the [caffe_data_extractor.py](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/scripts/caffe_data_extractor.py) on [caffe-model](https://github.com/soeaver/caffe-model)or [tensorflow_data_extractor_ckpt.py](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/master/ComputeLibrary_v1801/scripts/tensorflow_data_extractor_ckpt.py) on [tensorflow slim model](https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models), but still can not infer correctly.So the inference time were instead collected by random filled weights or incorrect inference. However with this bug [#311](https://github.com/ARM-software/ComputeLibrary/issues/311) fixed in Arm ComputeLibrary v18.01, the inference time can be obtained by random filled weights accurately to a certain degree of confidence, although it's still a little smaller than the real inference time.   
 
 ###  Terminology   
 - TPI: The total time for per inference, and the unit of all the data below is millisecond.  
