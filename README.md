@@ -25,7 +25,7 @@ TargetHint            target_hint      = set_target_hint(argc > 1 ? std::strtol(
   `
 
 +  [CaffeOnACL](https://github.com/OAID/caffeOnACL)    
-The CaffeOnACL performances are directly copy from [CaffeOnACL performance report](https://github.com/OAID/CaffeOnACL/blob/master/acl_openailab/performance_report.pdf)
+The CaffeOnACL performances are directly copied from [CaffeOnACL performance report](https://github.com/OAID/CaffeOnACL/blob/master/acl_openailab/performance_report.pdf)
 
 ##  Testing process    
 1. Converted pre-trained weights by the scripts [here](https://github.com/zhaofenqiang/ACLPerformanceTest/tree/master/ComputeLibrary_v1801/scripts), although the code is a little ugly and probably can not work correctly. It's just for reference because the [raw scripts](https://github.com/ARM-software/ComputeLibrary/tree/master/scripts) has some problems as mentioned in [#324](https://github.com/ARM-software/ComputeLibrary/issues/324) and caffe_data_extractor.py could failed when a bolb has 3 weights. 
