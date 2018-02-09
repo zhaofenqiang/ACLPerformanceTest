@@ -7,12 +7,12 @@ Performance data were collected on AlexNet, GoogLeNet, SqueezeNet_v1.0, MobileNe
 And the pre-trained weights were provided by [caffe model zoo](https://github.com/BVLC/caffe/wiki/Model-Zoo), and [tensorflow slim model](https://github.com/tensorflow/models/tree/master/research/slim#pre-trained-models).
 
 ## Methods    
-Unlike v17.12 performance test, only Graph API was used to represent the ComputeLibrary performance on v18.01.  
+Unlike v17.12 performance test, only Graph API was used to test the ComputeLibrary performance on v18.01.  
 + ACL Graph API   
 The examples is located at [examples/graph_*.cpp](https://github.com/zhaofenqiang/ACLPerformanceTest/tree/master/ComputeLibrary_v1801/examples).  The result is an average time of more than 50 times inferences, but the standard deviation is still considerably very large, about 40%. The performacnce data were collected at a optimal develop board's working state. Here are the images used in the [log](), their correct label is dog, cat, pig respectively.     
 ![dog](https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/dog.jpg)  ![cat](https://raw.githubusercontent.com/zhaofenqiang/ComputeLibrary/master/data/images/cat_227.jpg)  ![pig](https://raw.githubusercontent.com/zhaofenqiang/ACLPerformanceTest/master/ComputeLibrary_v1801/data/images/pig.jpg)  
 
-  For simplicity, vgg16, vgg19, inception-v3, and inception-v4's convolution layer were executed by graph NEON DIRECT and OPENCL DIRECT convolution following the [official](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/fc99318d5062fe93455bedfec7e01e308aa02aff/ComputeLibrary_v1801/examples/graph_inception_v3.cpp#L56) default configuration:   
+ For simplicity, vgg16, vgg19, inception-v3, and inception-v4's convolution layer were executed by graph NEON DIRECT and OPENCL DIRECT convolution following the [official](https://github.com/zhaofenqiang/ACLPerformanceTest/blob/fc99318d5062fe93455bedfec7e01e308aa02aff/ComputeLibrary_v1801/examples/graph_inception_v3.cpp#L56) default configuration:   
 ` TargetHint            target_hint      = set_target_hint(argc > 1 ? std::strtol(argv[1], nullptr, 10) : 0);
         ConvolutionMethodHint convolution_hint = ConvolutionMethodHint::DIRECT;`
 
