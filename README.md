@@ -1,6 +1,6 @@
 # [Arm ComputeLibrary v18.01](https://github.com/ARM-software/ComputeLibrary/tree/v18.01) Performance Report  
 v17.12 performance report is [here](https://github.com/zhaofenqiang/Test_ComputeLibrary).  
-This report is tested on [RK3399](http://wiki.t-firefly.com/index.php/Firefly-RK3399) platform and the Arm Compute Library is version **18.01**.
+This report is tested on [RK3399](http://wiki.t-firefly.com/index.php/Firefly-RK3399) platform and the Arm Compute Library is version [**18.01**](https://github.com/ARM-software/ComputeLibrary/tree/v18.01).
 
 ## Models
 Performance data were collected on AlexNet, GoogLeNet, SqueezeNet_v1.0, MobileNet_v1_1_224, VGG16, VGG19, Inception-v3 and Inception-v4.
