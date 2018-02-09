@@ -1,5 +1,5 @@
 # [Arm ComputeLibrary v18.01](https://github.com/ARM-software/ComputeLibrary/tree/v18.01) Performance Report  
-[v17.12 performance report](https://github.com/zhaofenqiang/Test_ComputeLibrary).  
+v17.12 performance report is [here](https://github.com/zhaofenqiang/Test_ComputeLibrary).  
 This report is tested on [RK3399](http://wiki.t-firefly.com/index.php/Firefly-RK3399) platform and the Arm Compute Library is version **18.01**.
 
 ## Models
